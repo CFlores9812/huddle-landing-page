@@ -1,0 +1,104 @@
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+/* font-family: 'Poppins', sans-serif; 
+ Weights: 400, 600
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(".//images/bg-desktop.svg");
+    background-size: cover;
+}
+
+.logo{
+    font-size: 0.5rem;
+    width: 200px;
+   
+    margin-top: 20px;
+}
+
+.picture{
+  margin: 20px;
+   width: 50%;
+   height:auto;
+  
+}
+
+.idk-yet{
+    font-weight: 500;
+    color: #ffffff;
+    padding: 40px ;
+ 
+}
+
+
+h1{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    margin-bottom: 10px;
+  
+}
+.idk-yet p {
+    margin-bottom: 10px;
+}
+
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color:hsl(300, 69%, 71%);
+    text-align: center;
+    padding: 15px;
+    width:30% ;
+    border-radius: 25px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+}
+i{
+   margin: 0 10px;
+}
+.icons{
+    color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+ 
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+.wrapper{
+    flex-direction: column;
+}
+.picture{
+    width: 90%;
+}
+}
+
+
+
+@media screen and (max-width: 500px){
+body{
+    background-image: url(".//images/bg-mobile.svg");
+    background-position: inherit;
+    background-size: inherit;
+}
+}
